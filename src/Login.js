@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         margin: 10,
     },
-})
+});
 
 type Props = {};
 export default class Login extends Component<Props> {
