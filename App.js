@@ -22,17 +22,20 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
+  componentWillMount() {
+    firebase.initializeApp({
+      apiKey: "AIzaSyBRdUEflJhz3ovznbjFH6q6QDnZ635byo4",
+      authDomain: "crmlinkedin2-3d5f5.firebaseapp.com",
+      databaseURL: "https://crmlinkedin2-3d5f5.firebaseio.com",
+      storageBucket: "crmlinkedin2-3d5f5.appspot.com",
+      messagingSenderId: "316953383997"
+    })
+  }
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to the CRM!!!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
         </Text>
       </View>
     );
