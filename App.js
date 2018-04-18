@@ -12,6 +12,7 @@ import {
   View
 } from 'react-native';
 import firebase from 'firebase';
+import Login from './src/Login'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -37,6 +38,7 @@ export default class App extends Component<Props> {
         <Text style={styles.welcome}>
           Welcome to the CRM!!!
         </Text>
+        <Login />
       </View>
     );
   }
