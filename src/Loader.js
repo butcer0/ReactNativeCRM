@@ -21,7 +21,7 @@ const Loader = ({ size }) => {
     return(
         <View style={styles.loader}>
             {/* This syntax means takes size, if not passed default 'small' */}
-            <Activity size={size || 'small'} />
+            <ActivityIndicator size={size || 'small'} />
         </View>
     );
 };
