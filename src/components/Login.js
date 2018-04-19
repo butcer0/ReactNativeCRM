@@ -5,11 +5,7 @@
  */
 
 import React, { Component } from 'react';
-import {
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { MKTextField, MKColor, MKButton } from 'react-native-material-kit';
 import Loader from './Loader';
 import firebase from 'firebase';
@@ -92,9 +88,7 @@ export default class Login extends Component<Props> {
  }
 
   render() {
-
-      const { form, fieldStyles, loginButtonArea, errorMessage, container, welcome } = styles;
-
+      const { form, fieldStyles, loginButtonArea, errorMessage, container } = styles;
     return (
       <View style={form}>
         <Text>Login or create an account</Text>
